@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>EcoInspira</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">EcoInspira</a>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text-container">
+            <h1>Cultivando um futuro sustentável</h1>
+            <h4>Ações, ideias e soluções para preservar o meio ambiente e garantir um mundo melhor para as próximas
+                gerações.</h4>
+            <button class="rounded-button">Artigos e Ideias</button>
+        </div>
+        <div class="image-container">
+            <img src="image/Happy Earth-bro.png" alt="Mundo Verde">
+        </div>
+    </div>
+    <div class="sobre-container">
+        <div class="sobre-text" id="sobre">
+            <h2>Sobre a EcoInspira</h2>
+            <p>A EcoInspira é um projeto criado com o objetivo de incentivar a preservação do meio ambiente e a adoção
+                de
+                práticas mais sustentáveis no dia a dia. Acreditamos que cada pequena ação pode fazer a diferença e
+                contribuir para um mundo melhor.</p>
+            <p>Queremos inspirar e informar pessoas sobre a importância da preservação do meio ambiente e da
+                sustentabilidade. Acreditamos que todos têm um papel importante a desempenhar nessa causa e queremos
+                ajudar
+                a conscientizar e motivar pessoas a fazerem a diferença.</p>
+            <p>Em nosso site, você encontrará artigos, dicas e soluções para uma vida mais sustentável, além de
+                informações
+                sobre eventos e projetos relacionados à causa ambiental. Junte-se a nós e faça parte dessa comunidade
+                que
+                busca um mundo mais equilibrado e sustentável!</p>
+        </div>
+        <div class="sobre-gif">
+            <img src="./image/planta-verde-nas-maos__1_-removebg-preview.png" alt="GIF animado">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <form id="contato" method="post" action="enviar_formulario.php">
+            <h3>Entre em contato conosco</h3>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Sugestão ou ideia de publicação de artigo:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="./image/Ecoinspira.png" alt="Logo">
+            </div>
+        </div>
+    </footer>
+    <div class="floating-buttons">
+        <a href="https://www.instagram.com/william.mss16/" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        </a>
+        <a href="#" class="twitter" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+    <div class="floating-buttons-left">
+        <a href="https://livepix.gg/uwillo" class="donation-support" id="pagamento">Doação de Apoio</a>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a91b680d9c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

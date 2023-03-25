@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 80px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #70c68c;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-bottom: 50px;
+}
+.text-container {
+  max-width: 50%;
+  margin-right: 5%;
+}
+
+h1,
+h4 {
+  font-family: "Alkatra", cursive;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.rounded-button {
+  font-family: "Alkatra", cursive;
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 0.7rem 5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.rounded-button:hover {
+  background-color: #45a049;
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 400px;
+  animation: shake 3s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .text-container,
+  .image-container {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* SOBRE */
+.sobre-container {
+  background: #d2e8d8
+    url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  padding: 2rem;
+}
+h2 {
+  font-family: "Alkatra", cursive;
+}
+p {
+  font-family: "Alkatra", cursive;
+}
+.sobre-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sobre-container p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.right {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+.sobre-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sobre-gif img {
+  width: 100%;
+}
+
+.form-container {
+  font-family: "Alkatra", cursive;
+  background: linear-gradient(to bottom, #70c68c, #d2e8d8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  display: inline-block;
+  max-width: 600px;
+}
+.hidden {
+  display: none;
+}
+h3 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #52865c;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #296e37;
+}
+
+footer {
+  background-color: #d2e8d8;
+  padding: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.floating-buttons a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.floating-buttons a.instagram {
+  background-color: #e1306c;
+}
+
+.floating-buttons a.twitter {
+  background-color: #1da1f2;
+}
+
+#support-btn {
+  background-color: #70c68c;
+}
+
+#support-btn i {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .floating-buttons {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .floating-buttons a {
+    font-size: 20px;
+  }
+}
+
+.floating-buttons-left a {
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  background-color: #70c68c;
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+  width: auto;
+}
+
+.floating-buttons-left a:hover {
+  background-color: #45a049;
+}
+
+.floating-buttons-left {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+  .floating-buttons-left {
+    bottom: 10px;
+    left: 10px;
+  }
+}

@@ -1,0 +1,99 @@
+body {
+  background-image: linear-gradient(to right, #70c68c, #d2e8d8);
+}
+h1 {
+  color: white;
+}
+.artigos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artigo {
+  width: 80%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.artigo h2 {
+  margin-bottom: 10px;
+}
+.hidden {
+  display: none;
+}
+
+button.ver-mais {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button.ver-mais:hover {
+  background-color: #45a049;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #70c68c;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
